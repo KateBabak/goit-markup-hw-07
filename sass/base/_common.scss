@@ -60,3 +60,10 @@ body {
 
 }
 
+address {
+    font-style: normal;
+}
+
+.active.link {
+    color: var(--color-blue);
+}
