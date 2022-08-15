@@ -92,10 +92,15 @@
         }
 
     &.contact-link {
+      
             color: var(--secondary-text-color-theme-light);
             display: flex;
             justify-content: center;
             align-items: center;
+            &:hover,
+            &:focus {
+                    color: var(--color-blue);
+                }
         }
 
 }

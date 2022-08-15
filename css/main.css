@@ -148,9 +148,7 @@ address {
   display: block;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.main-button:hover,
-.main-button:focus {
+.main-button:hover, .main-button:focus {
   background-color: var(--hover-background-color);
 }
 
@@ -198,9 +196,7 @@ address {
   border: 1px solid rgba(0, 0, 0, 0.1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-close-btn:hover,
-.modal-close-btn:hover {
+.modal-close-btn:hover, .modal-close-btn:hover {
   color: var(--color-blue);
 }
 
@@ -235,7 +231,6 @@ address {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   border: 1px solid rgba(33, 33, 33, 0.2);
 }
-
 .modal-form-input:focus {
   outline: none;
   border-color: var(--color-blue);
@@ -289,7 +284,6 @@ address {
   width: 448px;
   height: 120px;
 }
-
 .modal-form-message::placeholder {
   font-weight: 400;
   font-size: 12px;
@@ -297,7 +291,6 @@ address {
   letter-spacing: 0.01em;
   color: rgba(117, 117, 117, 0.5);
 }
-
 .modal-form-message:focus {
   outline: none;
   border-color: var(--color-blue);
@@ -313,7 +306,6 @@ address {
   color: var(--secondary-text-color-theme-light);
   margin-bottom: 30px;
 }
-
 .modal-chek-descr > svg {
   fill: var(--primary-text-color-theme-dark);
   border: 1px solid var(--primary-text-color-theme-light);
@@ -342,9 +334,7 @@ address {
   display: block;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.modal-form-submit:hover,
-.modal-form-submit:focus {
+.modal-form-submit:hover, .modal-form-submit:focus {
   background-color: var(--hover-background-color);
 }
 
@@ -379,12 +369,10 @@ address {
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 16px;
 }
-
 .footer-form-input:focus {
   outline: none;
   border-color: var(--color-blue);
 }
-
 .footer-form-input::placeholder {
   color: rgba(255, 255, 255, 0.6);
 }
@@ -407,9 +395,7 @@ address {
   margin: 0 auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.footer-modal-button:hover,
-.footer-modal-button:focus {
+.footer-modal-button:hover, .footer-modal-button:focus {
   background-color: var(--hover-background-color);
 }
 
@@ -437,6 +423,25 @@ address {
 
 .main-menu {
   display: flex;
+}
+.main-menu.menu-link::after {
+  height: 4px;
+  background-color: var(--color-blue);
+  content: "";
+  display: block;
+  transform: scaleX(0);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  top: 46px;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.main-menu .menu-link:hover::after,
+.main-menu .menu-link:focus::after,
+.main-menu .menu-link.active::after {
+  transform: scaleX(1);
 }
 
 .logo {
@@ -471,42 +476,22 @@ address {
   position: relative;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
+.menu-link:hover, .menu-link:focus {
+  color: var(--color-blue);
+}
 .menu-link.contact-link {
   color: var(--secondary-text-color-theme-light);
   display: flex;
   justify-content: center;
   align-items: center;
 }
+.menu-link.contact-link:hover, .menu-link.contact-link:focus {
+  color: var(--color-blue);
+}
 
 .contact-link-icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.menu-link:hover,
-.menu-link:focus {
-  color: var(--color-blue);
-}
-
-.main-menu .menu-link::after {
-  height: 4px;
-  background-color: var(--color-blue);
-  content: "";
-  display: block;
-  transform: scaleX(0);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  top: 46px;
-  position: absolute;
-  left: 0;
-  width: 100%;
-  border-radius: 2px;
-}
-
-.main-menu .menu-link:hover::after,
-.main-menu .menu-link:focus::after,
-.main-menu .menu-link.active::after {
-  transform: scaleX(1);
 }
 
 .svg-icon-wrapper {
@@ -555,9 +540,7 @@ address {
   color: var(--svg-fill-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.social-list-link:hover,
-.social-list-link:focus {
+.social-list-link:hover, .social-list-link:focus {
   background-color: var(--color-blue);
   color: var(--primary-text-color-theme-dark);
 }
@@ -586,9 +569,7 @@ address {
   color: var(--svg-fill-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.client-list-link:hover,
-.client-list-link:focus {
+.client-list-link:hover, .client-list-link:focus {
   color: var(--color-blue);
   border-color: var(--color-blue);
 }
@@ -703,7 +684,6 @@ address {
   background-color: var(--background-color-dark);
   padding: 60px 0;
 }
-
 .footer-list > .container {
   display: flex;
   align-items: baseline;
@@ -749,18 +729,14 @@ address {
   margin-left: 70px;
   margin-right: auto;
 }
-
-.footer-social .social-list-link {
+.footer-social.social-list-link {
   background-color: rgba(255, 255, 255, 0.1);
 }
-
-.footer-social .social-list-icon {
-  fill: var(--primary-text-color-theme-dark);
-}
-
-.footer-social .social-list-link:hover,
-.footer-social .social-list-link:focus {
+.footer-social.social-list-link:hover, .footer-social.social-list-link:focus {
   background-color: var(--color-blue);
+}
+.footer-social.social-list-icon {
+  fill: var(--primary-text-color-theme-dark);
 }
 
 .work-list-img-wrapper {
@@ -777,9 +753,7 @@ address {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.portfolio-item-link:hover,
-.portfolio-item-link:focus {
+.portfolio-item-link:hover, .portfolio-item-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -826,9 +800,7 @@ address {
   padding: 6px 22px;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-.filter-list-button:hover,
-.filter-list-button:focus {
+.filter-list-button:hover, .filter-list-button:focus {
   color: var(--primary-text-color-theme-dark);
   background-color: var(--color-blue);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
