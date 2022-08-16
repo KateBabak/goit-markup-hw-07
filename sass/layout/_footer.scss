@@ -37,6 +37,12 @@
  }
 
 
+ .contact-list__link:hover,
+ .contact-list__link:focus {
+     color: var(--color-blue);
+ }
+
+
  .footer-title {
      margin-bottom: 20px;
      text-transform: uppercase;

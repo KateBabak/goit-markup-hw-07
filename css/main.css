@@ -745,6 +745,11 @@ address {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.contact-list__link:hover,
+.contact-list__link:focus {
+  color: var(--color-blue);
+}
+
 .footer-title {
   margin-bottom: 20px;
   text-transform: uppercase;
