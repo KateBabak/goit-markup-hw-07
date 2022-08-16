@@ -1,9 +1,9 @@
-.benefits-list {
+.benefits_list {
     display: flex;
     gap: 30px;
 }
 
-.benefits-list-item-tittle {
+.benefits_list__tittle {
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -12,7 +12,7 @@
     margin-bottom: 10px;
 }
 
-.benefits-list-item-description {
+.benefits_list__description {
     color: var(--secondary-text-color-theme-light);
     font-weight: 400;
     font-size: 14px;

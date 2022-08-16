@@ -133,7 +133,7 @@ address {
   letter-spacing: 0.03em;
 }
 
-.main-button {
+.hero-section__button {
   background-color: var(--color-blue);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: inherit;
@@ -148,7 +148,7 @@ address {
   display: block;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.main-button:hover, .main-button:focus {
+.hero-section__button:hover, .hero-section__button:focus {
   background-color: var(--hover-background-color);
 }
 
@@ -621,7 +621,7 @@ address {
   margin: 0 auto;
 }
 
-.main-tittle {
+.hero-section__tittle {
   color: var(--primary-text-color-theme-dark);
   font-weight: 900;
   font-size: 44px;
@@ -634,12 +634,12 @@ address {
   margin-bottom: 30px;
 }
 
-.benefits-list {
+.benefits_list {
   display: flex;
   gap: 30px;
 }
 
-.benefits-list-item-tittle {
+.benefits_list__tittle {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -648,7 +648,7 @@ address {
   margin-bottom: 10px;
 }
 
-.benefits-list-item-description {
+.benefits_list__description {
   color: var(--secondary-text-color-theme-light);
   font-weight: 400;
   font-size: 14px;
