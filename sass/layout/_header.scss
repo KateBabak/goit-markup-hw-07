@@ -159,7 +159,7 @@
 }
 
 
-.about-work-list {
+.about-list__work {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -178,7 +178,7 @@
 
 }
 
-.about-list-item {
+.about-list__item {
     position: relative;
 }
 
@@ -189,7 +189,7 @@
     gap: 10px;
 }
 
-.social-list-link {
+.social-list__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -211,7 +211,7 @@
 
 
 
-.social-list-icon {
+.social-list__icon {
     fill: currentColor;
     width: 20px;
     height: 20px;
