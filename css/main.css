@@ -424,7 +424,7 @@ address {
 .main-menu {
   display: flex;
 }
-.main-menu.main-menu__link::after {
+.main-menu .main-menu__link::after {
   height: 4px;
   background-color: var(--color-blue);
   content: "";
@@ -764,13 +764,13 @@ address {
   margin-left: 70px;
   margin-right: auto;
 }
-.footer-social.social-list__link {
+.footer-social .social-list__link {
   background-color: rgba(255, 255, 255, 0.1);
 }
-.footer-social.social-list__link:hover, .footer-social.social-list__link:focus {
+.footer-social .social-list__link:hover, .footer-social .social-list__link:focus {
   background-color: var(--color-blue);
 }
-.footer-social.social-list__link.social-list__icon {
+.footer-social .social-list__link .social-list__icon {
   fill: var(--primary-text-color-theme-dark);
 }
 
